@@ -29,22 +29,31 @@
 <div class="container" style="text-align: center">
   <form>
 
-        <input type="number" min="1" max="1000" class="form-control sizeWidth inline" placeholder="a" required>
+        <input #A type="number" min="1" max="1000" class="form-control sizeWidth inline" placeholder="a" required>
         <select class="form-control sizeWidth inline">
           <option>+</option>
           <option>-</option>
         </select>
 
         <p class="inline">  j  </p>
-        <input type="number" min="1" max="1000" class="form-control sizeWidth inline" placeholder="b" required>
-        <input type="number" min="1" max="50" class="form-control sizeWidth inline" placeholder="n" required>
+        <input #B type="number" min="1" max="1000" class="form-control sizeWidth inline" placeholder="b" required>
+        <input #N type="number" min="1" max="50" class="form-control sizeWidth inline" placeholder="n" required>
   
   </form>
 
 
   <br>
-  <button type="button" class="btn btn-outline-primary btn-block">Calculate</button>
-
+  <button type="button" class="btn btn-outline-primary btn-block" (click)='checkNumber(A.value,B.value,N.value) '>Calculate</button>
+  
+  
+  
+    <div class="alert alert-warning alert-dismissible fade show" *ngIf="[[ang]]==3" role="alert">
+    <strong>Holy guacamole!</strong> You should check in on some of those fields below.
+    <button type="button" class="close" data-dismiss="alert" aria-label="Close">
+      <span aria-hidden="true">&times;</span>
+    </button>
+  </div>
+  
   <br><br>
 
 
