@@ -19,15 +19,6 @@
   <button type="button" class="btn btn-outline-primary btn-block"
     (click)='checkNumber(A.value,B.value,N.value) '>Calculate</button>
 
-
-
-  <div class="alert alert-warning alert-dismissible fade show" *ngIf="[[ang]]==3" role="alert">
-    <strong>Holy guacamole!</strong> You should check in on some of those fields below.
-    <button type="button" class="close" data-dismiss="alert" aria-label="Close">
-      <span aria-hidden="true">&times;</span>
-    </button>
-  </div>
-
   <br><br>
 
 
@@ -41,12 +32,11 @@
       </tr>
     </thead>
     <tbody>
-      <tr *ngFor="let sB of Solution; let i = index">
+      <tr *ngFor="let sB of this.solutions; let i = index">
         <th scope="row">{{i}}</th>
         <td>{{sB}}</td>
         <td>{{sB}}</td>
         <td>{{sB}}</td>
-
       </tr>
     </tbody>
   </table>
