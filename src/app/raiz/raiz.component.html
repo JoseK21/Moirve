@@ -1,0 +1,53 @@
+<br><br>
+<img src="assets/z1.png" class="img-fluid rounded mx-auto d-block ">
+<br><br>
+<div class="container" style="text-align: center">
+  <form>
+
+    <input #A type="number" min="-100" max="100" class="form-control sizeWidth inline" placeholder="a" required>
+
+    <input #B type="number" min="-100" max="100" class="form-control sizeWidth inline" placeholder="b" required>
+
+    <p class="inline"> j </p>
+
+    <input #N type="number" min="-50" max="50" class="form-control sizeWidth inline" placeholder="n" required>
+
+  </form>
+
+
+  <br>
+  <button type="button" class="btn btn-outline-primary btn-block"
+    (click)='checkNumber(A.value,B.value,N.value) '>Calculate</button>
+
+
+
+  <div class="alert alert-warning alert-dismissible fade show" *ngIf="[[ang]]==3" role="alert">
+    <strong>Holy guacamole!</strong> You should check in on some of those fields below.
+    <button type="button" class="close" data-dismiss="alert" aria-label="Close">
+      <span aria-hidden="true">&times;</span>
+    </button>
+  </div>
+
+  <br><br>
+
+
+  <table class="table">
+    <thead class="thead-dark">
+      <tr>
+        <th scope="col">#</th>
+        <th scope="col">Binómica</th>
+        <th scope="col">Polar</th>
+        <th scope="col">Trigonométrica</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr *ngFor="let sB of Solution; let i = index">
+        <th scope="row">{{i}}</th>
+        <td>{{sB}}</td>
+        <td>{{sB}}</td>
+        <td>{{sB}}</td>
+
+      </tr>
+    </tbody>
+  </table>
+</div>

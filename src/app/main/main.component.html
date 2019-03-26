@@ -1,78 +1,39 @@
 <!--The content below is only a placeholder and can be replaced.-->
 
-<nav class="navbar navbar-expand-lg navbar-dark bg-dark">
-  <span class="navbar-brand color">Teorema de Moirve</span>
-  <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNav" aria-controls="navbarNav"
-    aria-expanded="false" aria-label="Toggle navigation">
-    <span class="navbar-toggler-icon"></span>
-  </button>
-  <div class="collapse navbar-collapse" id="navbarNav">
-    <ul class="navbar-nav">
-      <li class="nav-item">
-        <a class="nav-link" routerLink="/history">History</a>
-      </li>
-      <li class="nav-item">
-        <a class="nav-link" routerLink="/help">Help</a>
-      </li>
-      <li class="nav-item">
-        <a class="nav-link" routerLink="/matematicalSteps">Mathematical steps</a>
-      </li>
-    </ul>
+
+
+
+<div class="container">
+
+  <br><br><br><br>
+  <div class="row">
+    <div class="col-sm-6">
+      <div class="card">
+        <div class="card-body">
+          <h5 class="card-title">Raiz n-ésima</h5>
+          <img src="assets/z1.png" class="img-fluid rounded mx-auto d-block ">
+          <a routerLink="/raiz" class="btn btn-primary btn-block">Go to calculate</a>
+        </div>
+      </div>
+    </div>
+    <div class="col-sm-6">
+      <div class="card">
+        <div class="card-body">
+          <h5 class="card-title">Exponente n-ésima</h5>
+          <img src="assets/z3.png" class="img-fluid rounded mx-auto d-block ">
+          <a routerLink="/exponente" class="btn btn-primary btn-block">Go to calculate</a>
+        </div>
+      </div>
+    </div>
+
+    <!--
+    <div class="container textCenter">
+      <br><br>
+      <br>
+      <h4> Curso: Señales y Sistemas 2019</h4>
+      <h5> Tarea Moral </h5>
+      <h6> José Nuñez </h6>
+    </div>
+
+    -->
   </div>
-</nav>
-
-<br>
-<br>
-<img src="assets/z21.PNG" class="img-fluid rounded mx-auto d-block" >
-
-<br><br>
-<div class="container" style="text-align: center">
-  <form>
-
-        <input #A type="number" min="1" max="1000" class="form-control sizeWidth inline" placeholder="a" required>
-        <select class="form-control sizeWidth inline">
-          <option>+</option>
-          <option>-</option>
-        </select>
-
-        <p class="inline">  j  </p>
-        <input #B type="number" min="1" max="1000" class="form-control sizeWidth inline" placeholder="b" required>
-        <input #N type="number" min="1" max="50" class="form-control sizeWidth inline" placeholder="n" required>
-  
-  </form>
-
-
-  <br>
-  <button type="button" class="btn btn-outline-primary btn-block" (click)='checkNumber(A.value,B.value,N.value) '>Calculate</button>
-  
-  
-  
-    <div class="alert alert-warning alert-dismissible fade show" *ngIf="[[ang]]==3" role="alert">
-    <strong>Holy guacamole!</strong> You should check in on some of those fields below.
-    <button type="button" class="close" data-dismiss="alert" aria-label="Close">
-      <span aria-hidden="true">&times;</span>
-    </button>
-  </div>
-  
-  <br><br>
-
-
-  <table class="table">
-    <thead class="thead-dark">
-      <tr>
-        <th scope="col">#</th>
-        <th scope="col">Binómica</th>
-        <th scope="col">Polar</th>
-        <th scope="col">Trigonométrica</th>
-      </tr>
-    </thead>
-    <tbody>
-      <tr>
-        <th scope="row">1</th>
-        <td>a + j b </td>
-        <td>|z|30° </td>
-        <td>r (cos(30°) + jsen(30°)</td>
-      </tr>
-    </tbody>
-  </table>
-</div>

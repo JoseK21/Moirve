@@ -1,15 +1,15 @@
 import { NgModule } from '@angular/core';
 import { Routes, RouterModule } from '@angular/router';
-import { HelpComponent } from './help/help.component';
-import { HistoryComponent } from './history/history.component';
-import { MatematicalStepsComponent } from './matematical-steps/matematical-steps.component';
 import { MainComponent } from './main/main.component';
+import { ExponenteComponent } from './exponente/exponente.component';
+import { RaizComponent } from './raiz/raiz.component';
 
 const routes: Routes = [
-  { path: '', component:  MainComponent },
-  { path: 'help', component: HelpComponent },
-  { path: 'history', component: HistoryComponent },
-  { path: 'matematicalSteps', component: MatematicalStepsComponent }
+  { path: '', component: MainComponent },
+
+  { path: 'raiz', component: RaizComponent },
+
+  { path: 'exponente', component: ExponenteComponent },
 ];
 
 @NgModule({
@@ -17,7 +17,7 @@ const routes: Routes = [
   exports: [RouterModule]
 })
 export class AppRoutingModule {
-  
 
 
- }
+
+}

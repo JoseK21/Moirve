@@ -1,0 +1,48 @@
+<br><br>
+<img src="assets/z3.png" class="img-fluid rounded mx-auto d-block ">
+<br><br>
+<div class="container" style="text-align: center">
+  <form>
+
+    <input #A type="number" min="-100" max="100" class="form-control sizeWidth inline" placeholder="a" required>
+
+    <input #B type="number" min="-100" max="100" class="form-control sizeWidth inline" placeholder="b" required>
+
+    <p class="inline"> j </p>
+
+    <input #N type="number" min="-50" max="50" class="form-control sizeWidth inline" placeholder="n" required>
+
+  </form>
+
+
+  <br>
+  <button type="button" class="btn btn-outline-primary btn-block"
+    (click)='createSolution(A.value,B.value,N.value) '>Calculate</button>
+
+
+  <br><br>
+
+
+  <table class="table">
+    <thead class="thead-dark">
+      <tr>
+        <th scope="col">#</th>
+        <th scope="col">Binómica</th>
+        <th scope="col">Polar</th>
+        <th scope="col">Trigonométrica</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+      <!-- <tr *ngFor="let sB of this.solutions; let i = index"> -->
+
+        <th scope="row">1</th>
+        <td>{{this.solutions[0]}}</td>
+        <td>{{this.solutions[1]}}</td>
+        <td>{{this.solutions[2]}}</td>
+
+
+      </tr>
+    </tbody>
+  </table>
+</div>

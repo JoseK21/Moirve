@@ -1,20 +1,20 @@
 import { async, ComponentFixture, TestBed } from '@angular/core/testing';
 
-import { MatematicalStepsComponent } from './matematical-steps.component';
+import { RaizComponent } from './raiz.component';
 
-describe('MatematicalStepsComponent', () => {
-  let component: MatematicalStepsComponent;
-  let fixture: ComponentFixture<MatematicalStepsComponent>;
+describe('RaizComponent', () => {
+  let component: RaizComponent;
+  let fixture: ComponentFixture<RaizComponent>;
 
   beforeEach(async(() => {
     TestBed.configureTestingModule({
-      declarations: [ MatematicalStepsComponent ]
+      declarations: [ RaizComponent ]
     })
     .compileComponents();
   }));
 
   beforeEach(() => {
-    fixture = TestBed.createComponent(MatematicalStepsComponent);
+    fixture = TestBed.createComponent(RaizComponent);
     component = fixture.componentInstance;
     fixture.detectChanges();
   });

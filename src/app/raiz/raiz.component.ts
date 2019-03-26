@@ -1,12 +1,11 @@
 import { Component, OnInit } from '@angular/core';
 
 @Component({
-  selector: 'app-main',
-  templateUrl: './main.component.html',
-  styleUrls: ['./main.component.css']
+  selector: 'app-raiz',
+  templateUrl: './raiz.component.html',
+  styleUrls: ['./raiz.component.css']
 })
-export class MainComponent implements OnInit {
-
+export class RaizComponent implements OnInit {
 
   validate: number = 0;
   mag: number = 0;
@@ -161,3 +160,4 @@ export class MainComponent implements OnInit {
     { id: '', sB: '', sP: '', sT: '' },
   ];
 }
+

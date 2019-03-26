@@ -5,18 +5,16 @@ import { NgModule } from '@angular/core';
 import { AppRoutingModule } from './app-routing.module';
 
 import { AppComponent } from './app.component';
-import { HistoryComponent } from './history/history.component';
-import { HelpComponent } from './help/help.component';
-import { MatematicalStepsComponent } from './matematical-steps/matematical-steps.component';
 import { MainComponent } from './main/main.component';
+import { RaizComponent } from './raiz/raiz.component';
+import { ExponenteComponent } from './exponente/exponente.component';
 
 @NgModule({
   declarations: [
     AppComponent,
-    HistoryComponent,
-    HelpComponent,
-    MatematicalStepsComponent,
-    MainComponent
+    MainComponent,
+    RaizComponent,
+    ExponenteComponent
   ],
   imports: [
     BrowserModule,

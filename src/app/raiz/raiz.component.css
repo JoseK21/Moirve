@@ -8,7 +8,3 @@ a.color{
 .inline {
     display: inline; /* the default for span */
   }
-
-.textCenter{
-    text-align: center
-}
